@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<title>Edades con VAR</title>
+<h1>Edades con var</h1>
+
+<script>
+	var year=2023 //año actual
+
+	var EmYr=1988; //establecemos los años de las personas 
+	var RoYr=1999;
+	var ScYr=2017;
+
+	var EmEd=year-EmYr; //esta variable nos da la edad, restando el año (year) con los años de las persobnas (EmYr, RoYr y ScYr),por lo que en el codigo ya no es necesario hacer operaciones solo incovamos estas variables, nos ahorra codigo 
+	var RoEd=year-RoYr;
+	var ScEd=year-ScYr;
+
+	var SumaEd=EmEd+RoEd+ScEd; //esta variable me da la suma de las edades, para facilitar el promedio 
+
+	alert("Edades Usando operaciones con variables");
+	document.write("Emma nacio en " + EmYr + ", tiene " + EmEd +" años");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Rodo nacio en " + RoYr + ", tiene " + RoEd +" años");
+    document.write("<br>");
+	document.write("<br>");
+	document.write("Scatt nacio en " + ScYr + ", tiene " + ScEd +" años");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("El promedio de edades es: " + (EmEd+RoEd+ScEd)/3); //Aqui estoy sacando promedio de edad invocando las variables de edad y haciendo la operacion adecuada
+	document.write("<br>");
+
+	promedio=SumaEd/3; // Variable de Promedio 
+	document.write("El promedio de edades es, usando una variable: " + Math.round(promedio)); //invoco solo mi promedio y lo redondeo 
+</script>
+
+
